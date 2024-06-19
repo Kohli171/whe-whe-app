@@ -1,0 +1,70 @@
+/* General App Styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.number-panel, .money-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+.number-button, .money-button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 2px solid transparent; /* Adds border to make it easy to show selection */
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.number-button.selected, .money-button:active {
+  border-color: #28a745; /* Green border for selected or active state */
+  background-color: #0056b3; /* Darker blue when selected or active */
+}
+
+/* Control Panel Styles */
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  background-color: #dc3545; /* Red color for control buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.controls button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Display Panel Styles */
+.display {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.display p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
